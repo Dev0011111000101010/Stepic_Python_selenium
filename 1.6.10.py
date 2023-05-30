@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 
 """ Локаторы """
-FIRST_NAME_REQUIRED = '[placeholder$="first name"]'
+FIRST_NAME_REQUIRED = '[placeholder$="name"]'
 LAST_NAME_REQUIRED = '[placeholder$="last name"]'
 EMAIL_REQUIRED = '[placeholder$="email"]'
 
