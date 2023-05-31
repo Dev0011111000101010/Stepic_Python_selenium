@@ -21,6 +21,8 @@ SUBMIT_BUTTON_CSS = '[type="submit"]'
 
 """ Ссылки """
 link = "http://suninjuly.github.io/selects1.html"
+# link = "http://suninjuly.github.io/selects2.html"  # ссылка на 2-ю страницу урока
+
 
 """ JS скрипты"""
 # Дебагинг, нужный ли элемент найден
