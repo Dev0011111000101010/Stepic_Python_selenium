@@ -3,7 +3,7 @@ class JSExecuteScript:
     Пример написания JS скрипта
     button = browser.find_element(By.TAG_NAME, "button")
     browser.execute_script("return arguments[0].scrollIntoView(true);", button)
-    или ==
+    ==
     browser.execute_script(JSExecuteScript.SCROLL_TO_ELEMENT_TOP_OF_SCREEN, button)
     """
     COLOR_RED = "arguments[0].style.setProperty('color', 'red', 'important');"
