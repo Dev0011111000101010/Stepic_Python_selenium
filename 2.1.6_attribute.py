@@ -23,26 +23,25 @@ try:
     browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
     browser.get(link)
 
-    people_radio = browser.find_element(By.CSS_SELECTOR, PEOPLE_RULES_RADIO)
-    people_checked = people_radio.get_attribute("checked")
-    print("value of people radio: ", people_checked)
-    assert people_checked is not None, "People radio is not selected by default"
+    robot_radio = browser.find_element(By.CSS_SELECTOR, ROBOT_RULES_RADIO)
+    robot_radio_click = robot_radio.click()
 
-    # x_element = browser.find_element(By.CSS_SELECTOR, VALUE_OF_X)
-    # x = x_element.text
-    #
-    # def calc(x):
-    #     return str(math.log(abs(12 * math.sin(int(x)))))
-    #
-    # y = calc(x)
-    # print(y, ' = y')
-    #
-    # input_element = browser.find_element(By.CSS_SELECTOR, INPUT)
-    # input_element.send_keys(y)
-    #
-    # click_robot_checkbox_element = browser.find_element(By.CSS_SELECTOR, ROBOT_CHECKBOX).click()
-    # click_robot_radio_element = browser.find_element(By.CSS_SELECTOR, ROBOT_RULES_RADIO).click()
-    # click_submit_button = browser.find_element(By.CSS_SELECTOR, SUBMIT_BUTTON).click()
+
+    x_element = browser.find_element(By.CSS_SELECTOR, VALUE_OF_X)
+    x = x_element.text
+
+    def calc(x):
+        return str(math.log(abs(12 * math.sin(int(x)))))
+
+    y = calc(x)
+    print(y, ' = y')
+
+    input_element = browser.find_element(By.CSS_SELECTOR, INPUT)
+    input_element.send_keys(y)
+
+    click_robot_checkbox_element = browser.find_element(By.CSS_SELECTOR, ROBOT_CHECKBOX).click()
+    click_robot_radio_element = browser.find_element(By.CSS_SELECTOR, ROBOT_RULES_RADIO).click()
+    click_submit_button = browser.find_element(By.CSS_SELECTOR, SUBMIT_BUTTON).click()
 
 
 finally:
