@@ -60,7 +60,7 @@ try:
     submit_button = browser.find_element(By.XPATH, XPATH_SUBMIT_BUTTON)
     submit_button_click = submit_button.click()
 
-    """ Вывод цифр результата в консоль IDE = можно убрать 'вэйт' из 'finaly' """
+    """ Вывод цифр результата в консоль IDE = можно убрать 'вэйт' из 'finally' """
     print(browser.switch_to.alert.text, " = Вывод цифр результата в консоль IDE = можно убрать 'вэйт' из 'finaly'")
 
 finally:
